@@ -34,7 +34,7 @@ Label.Text = styled.span`
   font-style: normal;
   font-weight: 500;
 
-  transition: .2s ease-in-out;
+  transition: .4s ease-in-out;
 `;
 
 const Input = styled.input`
@@ -53,13 +53,15 @@ const Input = styled.input`
   border-bottom: 6px solid #53585d;
   border-radius: 5px;
   margin-bottom: 10px;
-
   &:focus{
     border-bottom-color: #ff0101;
   }
   &:focus:not([type='color']) + ${Label.Text}{
     transform: scale(0.6) translateY(-10px);
     color: #7b7b7b;
+  }
+  &:hover + ${Label.Text}{
+    color: #7c7c7c;
   }
   ${({ value }) => {
     const hasValue = value.length > 0;
