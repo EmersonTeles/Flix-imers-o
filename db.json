@@ -1,0 +1,16 @@
+{
+    "Categorias":[
+        {
+            "id":1,
+            "nome":"Front-end",
+            "descricao":"Uma categoria do barulho",
+            "cor": "#fff" 
+        },
+        {
+            "id":2,
+            "nome": "Back-end",
+            "descricao":"uma categoria silenciosa",
+            "cor": "#7ac14a"
+        }
+    ]
+}
